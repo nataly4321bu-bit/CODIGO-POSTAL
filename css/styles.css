@@ -1,0 +1,105 @@
+
+        body{
+
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg,#dff5d3,#eefbe5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+
+        }
+
+        .contenedor{
+
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            width: 400px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+
+        }
+
+        h2{
+
+            text-align: center;
+            color: #5da83d;
+            margin-bottom: 25px;
+
+        }
+
+        label{
+
+            font-size: 18px;
+            font-weight: bold;
+            color: #4f7f39;
+
+        }
+
+        input{
+
+            width: 100%;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 15px;
+            border: 2px solid #cfe9bc;
+            font-size: 18px;
+            outline: none;
+            box-sizing: border-box;
+
+        }
+
+        input:focus{
+
+            border-color: #79c85c;
+
+        }
+
+        .mensaje{
+
+            margin-top: 10px;
+            color: #666;
+            font-size: 14px;
+
+        }
+
+        button{
+
+            width: 100%;
+            margin-top: 25px;
+            padding: 15px;
+            border: none;
+            border-radius: 18px;
+            background: linear-gradient(90deg,#8ed16d,#6cbc4c);
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        .imagen{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.imagen img{
+    width: 200px;
+    animation: flotar 3s ease-in-out infinite;
+}
+
+@keyframes flotar{
+
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-10px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+
+}

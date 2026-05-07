@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/styles.css">
+    <title>Código Postal</title>
+</head>
+<body>
+    <div class="contenedor">
+ <div class="imagen">
+            <img src="img/codigo.jpg" alt="Salud">
+        </div>
+        <h2> CÓDIGO POSTAL</h2>
+       <form id="registrationForm">
+
+    <label>
+        Ingresa tu Código Postal:
+    </label>
+
+    <input type="text" pattern="[0-9]{5}" maxlength="5" placeholder="Debe tener solo 5 números" required >
+
+    <button type="submit">Enviar</button>
+</form>
+
+<script>
+document.getElementById('registrationForm').onsubmit = function(event){
+
+    event.preventDefault();
+
+    alert('Encuesta enviada');
+
+    setTimeout(function(){
+
+        location.reload();
+
+    }, 2000);
+
+};
+</script>
+</body>
+</html>
